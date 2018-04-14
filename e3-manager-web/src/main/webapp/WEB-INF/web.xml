@@ -3,7 +3,6 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
-	<display-name>bos-web</display-name>
 	<!-- 设置全局字符集 -->
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
@@ -33,12 +32,4 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- spring容器加载 -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/applicationContext-*.xml</param-value>
-	</context-param>
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
 </web-app>
