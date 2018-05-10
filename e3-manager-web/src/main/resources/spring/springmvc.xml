@@ -31,4 +31,5 @@
 	<dubbo:application name="e3-manager-web"/>
 	<dubbo:registry address="192.168.189.129:2181" protocol="zookeeper"/>
 	<dubbo:reference interface="com.jsako.e3mall.service.TbItemService" id="tbItemService"/>
+	<dubbo:reference interface="com.jsako.e3mall.service.TbItemCatService" id="tbItemCatService"/>
 </beans>

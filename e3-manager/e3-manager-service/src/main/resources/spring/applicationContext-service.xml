@@ -22,4 +22,5 @@
 	<dubbo:protocol name="dubbo" port="20880"/>
 	<!-- 配置需要暴露的服务接口以及实现 -->
 	<dubbo:service interface="com.jsako.e3mall.service.TbItemService" ref="tbItemServiceImpl" timeout="600000"></dubbo:service>
+	<dubbo:service interface="com.jsako.e3mall.service.TbItemCatService" ref="tbItemCatServiceImpl" timeout="600000"></dubbo:service>
 </beans>
